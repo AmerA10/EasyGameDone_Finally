@@ -10,10 +10,6 @@ public class manageGame : MonoBehaviour
     // Start is called before the first frame update
 
     private static manageGame manageGameInstance;
-
-   
-
-
     void Awake()
     {
        
@@ -28,16 +24,6 @@ public class manageGame : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void Start()
-    {
-
-  
-    }
-
-    // Update is called once per frame
-   
-
-   
     public void loadGame()
     {
         SceneManager.LoadScene(0);

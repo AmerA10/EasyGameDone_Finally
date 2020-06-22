@@ -7,11 +7,6 @@ public class playAnimation : MonoBehaviour
     // Start is called before the first frame update
     public playHitAnimation playAnim;
     public playHitAnimation playAnimTwo;
-    void Start()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
        
@@ -22,9 +17,5 @@ public class playAnimation : MonoBehaviour
         }
     
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 }

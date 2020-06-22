@@ -21,7 +21,6 @@ public class playerMove : MonoBehaviour
     }
 
 
-
     void Update()
     {
 
@@ -35,14 +34,5 @@ public class playerMove : MonoBehaviour
         transform.position = centerOfMoving + offset;
     }
 
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        Debug.Log("Colliding with :" + collision.name);    
-        if (collision.name == "Ball")
-        {
-            Debug.Log("Colliding with the ball...");
-            Debug.Log("Increasing Score...");
-            ManageScore.increaseScore();
-        }
-    }
+    
 }

@@ -5,21 +5,25 @@ using UnityEngine;
 public class ballMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     [Range(5, 8.5f)]
     public float speed = 5f;
-
-
 
     Vector2 direction;
     void Start()
     {
-        direction = new Vector2(2, 1 );
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = direction;
-       
-    }
+        startBall();
 
+   
+    }
+    public void startBall()
+    {
+        direction = new Vector2(Random.Range(-50,50),Random.Range(-50,50)) * Time.deltaTime * 2;
+        rb.velocity = direction;
+        this.transform.rotation = Quaternion.Euler(Vector3.zero);
+    }
+        
     void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -27,8 +31,11 @@ public class ballMovement : MonoBehaviour
         Debug.Log(direction);
         rb.velocity = direction.normalized  * speed;
         speed += 0.05f;
-      
-    
         
+            if (collision.CompareTag("Player"))
+            {
+        
+                ManageScore.increaseScore();
+            }
     }
 }

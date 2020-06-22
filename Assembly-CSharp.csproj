@@ -63,17 +63,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BallHealth.cs" />
-    <Compile Include="Assets\HealthBar.cs" />
-    <Compile Include="Assets\PlayerHealth.cs" />
+    <Compile Include="Assets\BallMovement.cs" />
     <Compile Include="Assets\Scripts\Managers\ManageScore.cs" />
     <Compile Include="Assets\Scripts\Managers\manageGame.cs" />
+    <Compile Include="Assets\Scripts\Turret\ShotMove.cs" />
     <Compile Include="Assets\Scripts\Turret\TurretBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Turret\playerShotMove.cs" />
+    <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\ball\BallHealth.cs" />
+    <Compile Include="Assets\Scripts\ball\BallTransformManager.cs" />
+    <Compile Include="Assets\Scripts\ball\Boss_1.cs" />
     <Compile Include="Assets\Scripts\ball\ballFIeld.cs" />
     <Compile Include="Assets\Scripts\ball\ballMovement.cs" />
+    <Compile Include="Assets\Scripts\player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\player\playAnimation.cs" />
     <Compile Include="Assets\Scripts\player\playHitAnimation.cs" />
     <Compile Include="Assets\Scripts\player\playerMove.cs" />
+    <Compile Include="Assets\Scripts\player\playerShooting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -107,7 +113,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\TrailScript.cs" />
+    <Compile Include="Assets\determineColorScipt.cs" />
     <Compile Include="Assets\gameManager.cs" />
+    <Compile Include="Assets\spawnTrail.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

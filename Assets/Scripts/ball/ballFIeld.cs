@@ -17,22 +17,17 @@ public class ballFIeld : MonoBehaviour
         }
 
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerExit2D(Collider2D collision)
     {
-       
-        
-            Debug.Log("You lost the game");
+
+        if(collision.enabled && collision.tag.Equals("Ball"))
+        {
+          
+           
             manageGameInstance.loadLoseMenu();
-        
+        }
     }
+     
+        
+    
 }
